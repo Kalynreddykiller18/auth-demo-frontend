@@ -34,7 +34,10 @@ const Signup = () => {
 
     const singup = async () => {
       try {
-        const res = await axios.post(`${process.env.BACKEND_URI}/users/`, user);
+        const res = await axios.post(
+          `https://auth-demo-backend.onrender.com/users/`,
+          user
+        );
         if (res.status === 201) {
           setMes("Account created succesfully, redirecting to login page...");
           navigate("/login");

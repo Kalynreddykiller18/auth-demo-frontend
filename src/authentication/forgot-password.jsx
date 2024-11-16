@@ -12,7 +12,7 @@ const ForgotPassword = () => {
       setLoading(true);
       setMes("");
       const res = await axios.post(
-        `${process.env.BACKEND_URI}/users/forgotpassword`,
+        `https://auth-demo-backend.onrender.com/users/forgotpassword`,
         { mail: mailRef.current.value }
       );
 

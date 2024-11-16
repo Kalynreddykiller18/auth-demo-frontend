@@ -26,7 +26,7 @@ const Login = ({ setLogged, setUser }) => {
       };
 
       const data = await axios.post(
-        `${process.env.REACT_APP_BACKEND_URI}/users/login`,
+        `https://auth-demo-backend.onrender.com/users/login`,
         credentials
       );
 

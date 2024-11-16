@@ -19,7 +19,7 @@ const ResetPassword = () => {
         const token = location.pathname.split("/")[2];
         setLinktoken(token);
         const res = await axios.get(
-          `${process.env.BACKEND_URI}/users/resetpasswordvalidation/${token}`
+          `https://auth-demo-backend.onrender.com/users/resetpasswordvalidation/${token}`
         );
 
         if (res.status === 200) {
@@ -44,7 +44,7 @@ const ResetPassword = () => {
         return setMes("Passwords not matched");
       }
       const res = await axios.post(
-        `${process.env.BACKEND_URI}/users/changepassword`,
+        `https://auth-demo-backend.onrender.com/users/changepassword`,
         { password: passref.current.value },
         {
           headers: {
