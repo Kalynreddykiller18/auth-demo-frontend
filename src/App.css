@@ -19,6 +19,7 @@ nav {
   display: grid;
   width: 100%;
   grid-template-columns: 7fr 2fr;
+  align-items: center;
 }
 
 nav li,
@@ -127,6 +128,11 @@ input[type="submit"]:disabled:hover {
 @media (max-width: 800px) {
   nav {
     grid-template-columns: 3fr 2fr;
-    align-items: center;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    grid-template-columns: 2fr 2fr;
   }
 }

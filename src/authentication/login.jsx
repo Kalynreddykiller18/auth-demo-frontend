@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+const backendURI = import.meta.env.VITE_BACKEND_URI;
 
 const Login = ({ setLogged, setUser }) => {
   const mailRef = useRef();
