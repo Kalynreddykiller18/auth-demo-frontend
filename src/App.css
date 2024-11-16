@@ -26,6 +26,11 @@ nav a {
   list-style: none;
   text-decoration: none;
   font-size: 1rem;
+  color: black;
+}
+
+a {
+  color: black;
 }
 
 nav li a:hover {
@@ -82,12 +87,18 @@ input[type="submit"] {
   color: white;
   font-weight: 500;
   border: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 10, 0.8);
 }
 
 input[type="button"]:enabled:hover,
 input[type="submit"]:enabled:hover {
   cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 10, 0.8);
+  box-shadow: 0 2px 4px rgba(0, 90, 30, 0.76);
+}
+
+input[type="submit"]:enabled:focus {
+  cursor: grab;
+  box-shadow: 0 2px 4px rgba(0, 90, 30, 0.16);
 }
 
 input[type="submit"]:disabled:hover {

@@ -38,6 +38,7 @@ const ForgotPassword = () => {
           ref={mailRef}
           name="email"
           placeholder="Enter your E-mail"
+          required
         />
         <input disabled={loading} type="submit" value="SEND MAIL" />
       </form>

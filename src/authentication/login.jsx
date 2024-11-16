@@ -12,8 +12,6 @@ const Login = ({ setLogged, setUser }) => {
 
   const navigate = useNavigate();
 
-  console.log("Backend URI:", process.env.REACT_APP_BACKEND_URI);
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -58,6 +56,7 @@ const Login = ({ setLogged, setUser }) => {
           ref={mailRef}
           id="mail"
           placeholder="E-mail"
+          required
         />
         <input
           type="password"
@@ -65,6 +64,7 @@ const Login = ({ setLogged, setUser }) => {
           ref={passRef}
           id="password"
           placeholder="Password"
+          required
         />
         <input disabled={loading} type="submit" value="LOGIN" />
       </form>

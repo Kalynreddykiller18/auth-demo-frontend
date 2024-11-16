@@ -73,11 +73,17 @@ const ResetPassword = () => {
       <h1>ResetPassword</h1>
       {valid ? (
         <form action="#" onSubmit={handleSubmit}>
-          <input type="password" ref={passref} placeholder="Password" />
+          <input
+            type="password"
+            ref={passref}
+            placeholder="Password"
+            required
+          />
           <input
             type="password"
             ref={conpassref}
             placeholder="Confirm Password"
+            required
           />
           <input disabled={loading} type="submit" value="UPDATE PASSWORD" />
         </form>

@@ -60,9 +60,9 @@ const Signup = () => {
       <h1>SIGNUP</h1>
       <form action="#" onSubmit={handleSubmit}>
         <input type="text" required ref={fnameRef} placeholder="First Name" />
-        <input type="text" ref={lnameRef} placeholder="Last Name" />
-        <input type="email" ref={mailRef} placeholder="E-mail" />
-        <input type="password" ref={passRef} placeholder="Password" />
+        <input type="text" ref={lnameRef} required placeholder="Last Name" />
+        <input type="email" ref={mailRef} required placeholder="E-mail" />
+        <input type="password" ref={passRef} required placeholder="Password" />
         <input
           type="password"
           ref={conpassRef}
